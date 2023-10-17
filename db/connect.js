@@ -1,10 +1,13 @@
 const Sequelize=require('sequelize')
+
 require('dotenv').config()
+
 const sequelize=new Sequelize('new_table','root','Sql@123',{
     host:'localhost',
     port:3306,
     dialect:'mysql'
 })
+
 const db={}
 db.Sequelize=Sequelize;
 db.sequelize=sequelize;
